@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  display: no;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+
+.custom-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  background: #1b1b1b;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .custom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-navbar .custom-logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.custom-navbar .custom-menu-list {
+  display: inline-flex;
+}
+
+.custom-menu-list li {
+  list-style: none;
+ 
+}
+
+.custom-menu-list li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+}
+
+.custom-menu-list li a:hover {
+  color: #007bff;
+  cursor: pointer;
+  
+}
+
+.banner {
+ 
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+.about {
+  padding: 30px 0;
+}
+.custom-menu-btn{
+  display: none;
+}
+.about .title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.about p {
+  padding-top: 20px;
+  text-align: justify;
+}
+.custom-navbar .navbar-toggler {
+  display: none;
+  /* Custom styles for the navbar toggler icon */
+}
+
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  
+}
+
+.custom-menu-list .custom-cancel-btn {
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+@media (max-width: 868px) {
+  .custom-menu-btn{
+    display: block;
+  }
+  .custom-menu-list .custom-cancel-btn {
+   display: block;
+  }
+  body.disabled {
+    overflow: hidden;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+
+  .custom-navbar .custom-menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+
+  .custom-navbar.show .custom-menu-list {
+    left: 0%;
+  }
+
+  .custom-navbar .custom-menu-list li {
+    margin-top: 45px;
+  }
+
+  .custom-navbar .custom-menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .custom-navbar.show .custom-menu-list li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .custom-navbar .custom-logo a {
+    font-size: 27px;
+  }
+}
