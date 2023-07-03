@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bfcdc8fa.css",
-    "main.js": "/portfolio/static/js/main.b8273466.js",
+    "main.css": "/portfolio/static/css/main.d08ca1ef.css",
+    "main.js": "/portfolio/static/js/main.9c340fcb.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/abel.png": "/portfolio/static/media/abel.ea7ab862f751c305e827.png",
     "static/media/profile.JPG": "/portfolio/static/media/profile.40460963ada26687d92d.JPG",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/CVAbel_Demere.jpg": "/portfolio/static/media/CVAbel_Demere.1c482b0c3d2bc397e4b6.jpg",
+    "static/media/CVAbel_Demere.pdf": "/portfolio/static/media/CVAbel_Demere.612c6cdfabba1ef2ab24.pdf",
     "static/media/fontawesome-webfont.eot": "/portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
@@ -16,12 +18,12 @@
     "static/media/BmiCalculator.jpg": "/portfolio/static/media/BmiCalculator.7a3e852b4e2eefea8e8a.jpg",
     "static/media/AgeCalculator.jpg": "/portfolio/static/media/AgeCalculator.2c1034bcdd973e45f6a1.jpg",
     "index.html": "/portfolio/index.html",
-    "main.bfcdc8fa.css.map": "/portfolio/static/css/main.bfcdc8fa.css.map",
-    "main.b8273466.js.map": "/portfolio/static/js/main.b8273466.js.map",
+    "main.d08ca1ef.css.map": "/portfolio/static/css/main.d08ca1ef.css.map",
+    "main.9c340fcb.js.map": "/portfolio/static/js/main.9c340fcb.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfcdc8fa.css",
-    "static/js/main.b8273466.js"
+    "static/css/main.d08ca1ef.css",
+    "static/js/main.9c340fcb.js"
   ]
 }
