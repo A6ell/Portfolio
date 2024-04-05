@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faTelegram, 
-  faFacebook, 
-  faInstagram, 
-  faTwitter, 
-  faLinkedin 
+import {
+  faTelegram,
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import profileImage from './assets/profile.jpg';
 import comingSoon from './assets/comingSoon.jpg';
@@ -18,19 +18,12 @@ import './Portfolio.css';
 function Portfolio() {
   const [expanded, setExpanded] = useState(false);
 
-  // Function to handle download click
   const handleDownloadClick = () => {
-    // Create a link element
     const link = document.createElement('a');
-    // Set the href attribute to the PDF file
     link.href = CVAbel_DemerePDF;
-    // Set the download attribute to specify the filename
     link.download = 'CVAbel_Demere.pdf';
-    // Append the link to the document body
     document.body.appendChild(link);
-    // Programmatically click the link to trigger the download
     link.click();
-    // Remove the link from the document body
     document.body.removeChild(link);
   };
 
@@ -44,21 +37,21 @@ function Portfolio() {
             </div>
           </div>
 
-          <button 
-            className="navbar-toggler" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" 
-            aria-expanded="false" 
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={() => setExpanded(!expanded)}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div 
-            className={`collapse navbar-collapse ${expanded ? 'show' : ''} transition-all duration-500`} 
+          <div
+            className={`collapse navbar-collapse ${expanded ? 'show' : ''} transition-all duration-500`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav ms-auto">
@@ -131,7 +124,7 @@ function Portfolio() {
                   <img className="card-img-top-resume" src={CVAbel_Demere} alt="Card image" />
                   <div className="card-body">
                     <h4 className="card-title text-center">CV</h4>
-                    <div className="text-center">
+                    <div className="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
                       <button className="btn btn-success click-button hover-text" style={{ color: 'white', background: 'black' }} onClick={handleDownloadClick}>Download PDF</button>
                     </div>
                   </div>
@@ -143,42 +136,92 @@ function Portfolio() {
       </section>
 
       <section id="portfolio">
-  <div className="container mt-3">
-    <h1 className="text-center">Projects</h1>
-    <div className="row">
-      <div className="col-lg-6 col-md-6 col-sm-12 mt-4">
-      <div className="card portfolioContent">
-  <img className="card-img-top" src={egovImage} alt="EGOV - Streamlining Government Services" style={{ objectFit: 'cover', height: '100%' }} />
-  <div className="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
-    <a href="https://electronic-government-services-ngubnb4ux-iyasu2s-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
-      <span className="btn hover-text "  style={{ color: 'black', background: 'white' }}>Click here to visit</span>
-    </a>
-  </div>
+        <div className="container mt-3">
+          <h1 className="text-center">Projects</h1>
+          <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-12 mt-4">
+              <div className="card">
+                <img className="card-img-top" src={egovImage} alt="EGOV - Streamlining Government Services" style={{ objectFit: 'cover', height: '100%' }} />
+                <div className="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
+                  <a href="https://electronic-government-services-ngubnb4ux-iyasu2s-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                    <span className=" btn " style={{ color: 'white', background: 'black' }}>Click here to visit</span>
+                  </a>
+                </div>
 
-          <div className="card-body" > {/* Set a fixed height for the card body */}
-            <p className="description-area">A project aimed at simplifying government ID registration and service applications through an online platform.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-lg-6 col-md-6 col-sm-12 mt-4">
-        <div className="card portfolioContent">
-          <img className="card-img-top" src={comingSoon} alt="Card image" style={{ objectFit: 'cover', height: '100%' }} />
-          <div className="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
-            <span className="btn hover-text" style={{ color: 'black', background: 'white' }}>Ecommerce Web app</span>
-          </div>
-          <div className="card-body"> {/* Set a fixed height for the card body */}
-            <p className="description-area" style={{ color: 'red' }}>The link is unavailable because the Web app is currently under development.</p>
-          </div>
-        </div>
-      </div>
+                <div className="card-body" >
+                  <div className="row">
+                    <div className="col-lg-6 col-md-6 col-sm-12">
+                      <h2 className="text-center" >E-Gov</h2>
+                      <p className="description-area">A project aimed at simplifying government ID registration and service applications through an online platform.</p>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12">
+  <h2 className="text-center">Tech Used</h2>
+  <dl className="description-area">
+    <div className="tech-item">
+      <dt>Frontend:</dt>
+      <dd>HTML, CSS & Javascript</dd>
     </div>
-  </div>
-</section>
+    <div className="tech-item">
+      <dt>UI:</dt>
+      <dd>Bootstrap</dd>
+    </div>
+    <div className="tech-item">
+      <dt>Backend:</dt>
+      <dd>Flask</dd>
+    </div>
+    <div className="tech-item">
+      <dt>Database:</dt>
+      <dd>SQLite</dd>
+    </div>
+  </dl>
+</div>
 
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div className="col-lg-6 col-md-6 col-sm-12 mt-4">
+              <div className="card">
+                <img className="card-img-top" src={comingSoon} alt="Card image" style={{ objectFit: 'cover', height: '100%' }} />
+                <div className="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
+                  <span className="btn" style={{ color: 'white', background: 'black' }}>Coming Soon</span>
+                </div>
+                <div className="card-body">
+                  <div className="row">
+                    <div className="col-lg-6 col-md-6 col-sm-12">
+                      <h2 className="text-center" >Ecommerce Web app</h2>
+                      <p className="description-area" style={{ color: 'red' }}>!!! Under Development.</p>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12">
+  <h2 className="text-center">Tech Used</h2>
+  <dl className="description-area">
+    <div className="tech-item">
+      <dt>Frontend:</dt>
+      <dd>CSS, Javascript, React.js</dd>
+    </div>
+    <div className="tech-item">
+      <dt>UI:</dt>
+      <dd>Bootstrap & Shadcn</dd>
+    </div>
+    <div className="tech-item">
+      <dt>Backend:</dt>
+      <dd>Express.js</dd>
+    </div>
+    <div className="tech-item">
+      <dt>Database:</dt>
+      <dd>PostgreSQL</dd>
+    </div>
+  </dl>
+</div>
 
-
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="contact">
         <div className="container mt-3">
@@ -187,26 +230,26 @@ function Portfolio() {
       </section>
 
       <footer id="footer">
-      <div className="container-fluid">
-        <div className="social-icons mt-4">
-          <a href="https://t.me/abel_d" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-            <FontAwesomeIcon className='social-icons-color' icon={faTelegram} />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100075329631293" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-            <FontAwesomeIcon className='social-icons-color' icon={faFacebook} />
-          </a>
-          <a href="https://www.instagram.com/a6el.d/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-            <FontAwesomeIcon className='social-icons-color' icon={faInstagram} />
-          </a>
-          <a href="https://twitter.com/A6elDemere" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-            <FontAwesomeIcon className='social-icons-color' icon={faTwitter} />
-          </a>
-          <a href="https://www.linkedin.com/in/abel-demere-a6282a281/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-            <FontAwesomeIcon className='social-icons-color' icon={faLinkedin} />
-          </a>
+        <div className="container-fluid">
+          <div className="social-icons mt-4">
+            <a href="https://t.me/abel_d" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+              <FontAwesomeIcon className='social-icons-color' icon={faTelegram} />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100075329631293" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+              <FontAwesomeIcon className='social-icons-color' icon={faFacebook} />
+            </a>
+            <a href="https://www.instagram.com/a6el.d/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+              <FontAwesomeIcon className='social-icons-color' icon={faInstagram} />
+            </a>
+            <a href="https://twitter.com/A6elDemere" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+              <FontAwesomeIcon className='social-icons-color' icon={faTwitter} />
+            </a>
+            <a href="https://www.linkedin.com/in/abel-demere-a6282a281/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+              <FontAwesomeIcon className='social-icons-color' icon={faLinkedin} />
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
     </div>
   );
 }

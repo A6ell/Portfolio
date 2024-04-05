@@ -3,17 +3,31 @@
   --e: cubic-bezier(0.19, 1, 0.22, 1);
   --font-sans: 'Rubik', sans-serif;
   --font-serif: 'Cardo', serif;
+  color: #ffffff!important;
 }
 body {
-  color: #ffffff!important;
+ 
   background: linear-gradient(to top, #202e38, #333340); 
+}
+/* Add this CSS to your Portfolio.css file */
+
+body, .navbar-nav .nav-link, .card-title, .btn, .social-icons-color, .text-center {
+  color: white !important;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
 }
 
 .navbar {
   margin: 10px;
   border-radius: 15px;
-  
-  background-color: rgba(0, 0, 0, 0.83);
+  /* background-color: rgba(0, 0, 0, 0.83); */
   font-weight: bolder;
   backdrop-filter: blur(10px);
 }
@@ -29,11 +43,10 @@ body {
 #contact {
   margin-top: 2rem;
   padding-top: 3rem;
-  
 } 
 
 .disabled-text {
-  color: red;
+  color: red!important
 }
 
 .social-icons {
@@ -58,51 +71,76 @@ body {
 }
 
 #footer {
-  
   text-align: center;
-}
-
-.navbar-collapse {
-  overflow: hidden;
 }
 
 .navbar-collapse.show {
   max-height: 500px; /* Adjust the max-height as needed */
 }
-.portfolioContent {
-  border-radius: 15px;
 
+.card-body {
+  color: #000000;
+  border: hidden;
+  background: linear-gradient(to top, #000000fe,  #18264bd0); 
+  position: relative;
+  z-index: 1;
 }
 
-.portfolioContent .card {
-  border-radius: 15px;
-  height: 100%; /* Set height to ensure all cards have the same height */
-}
-
-.portfolioContent .card-body {
+/* .card-container {
+  margin: auto;
+  max-width: 1600px;
+  min-width: 600px;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 100vh;
+  padding-top: 60px;
+  box-sizing: border-box;
 }
-
-.portfolioContent .card-title {
-  font-size: 1.25rem; /* Adjust font size as needed */
-}
-
-.portfolioContent .card-text {
-  display: flex;
-  font-size: 1rem; /* Adjust font size as needed */
-}
-
 .card {
   border-radius: 15px!important;
-
+  border: none; /* Add this line to remove the border 
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
- 
 }
 
 .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.015);
+  z-index: 2;
+}
+
+.card:before {
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(80, 155, 234, 0.251));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card .description-area {
+  color: rgb(255, 255, 255);
+  min-height: 30px;
+  position: relative;
+  padding: 5px 15px 15px 15px;
+  font-size: 20px!important;
+} */
+
+.card {
+  border: #000000;
+  border-radius: 15px!important;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin: 0 auto; /* Set left and right margins to auto */
+  border-color: rgba(0, 0, 0, 0.83)!important
+}
+
+.card:hover {
+
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: scale(1.015);
   z-index: 2;
@@ -111,7 +149,7 @@ body {
 
 .card::before,
 .card::after {
-  
+  /* content: ""; */
   position: absolute;
   width: 100%;
   height: 0;
@@ -122,64 +160,54 @@ body {
 
 .card:hover::before,
 .card:hover::after {
+  
   height: 100%;
   
 }
 
-.card .description-area {
-  color: aliceblue;
-  min-height: 30px;
-  position: relative;
-  padding: 5px 15px 15px 15px;
-  font-size: 20px!important;
-}
 .card .dark-bg {
+  
   background-color: #333;
   height: auto;
   margin-bottom: 10px;
 }
 
-.card-title {
-  color: aliceblue!important;
-  font-size: 30px!important;
+.card .description-area {
+  color: white;
+  position: relative;
+  padding: 5px 15px 15px 15px;
 }
-.card-body {
- 
-  min-height: 50px;
+
+.card .content {
   position: relative;
   z-index: 1;
   color: #000;
 }
 
-.card-img-top {
-  min-height: 200px;
-}
-.card:hover .click-button {
-  opacity: 1;
-}
-
-.card {
-
-  border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-color: #000000;
-  position: relative;
-}
-
-.hover-text:hover {
-  background-color:  #89b6ff !important;
-}
 .hover-text {
- 
+ background-color: #ffffff;
   padding: 10px 20px!important; /* Adjust padding as needed */
   border-radius: 5px; /* Adjust border radius as needed */
   font-size: 26px!important; /* Adjust font size as needed */
 }
-.hover-text:hover  {
- background-color: #89b6ff;
+
+.btn {
+  margin-bottom: 150px;
   padding: 10px 20px!important; /* Adjust padding as needed */
   border-radius: 5px; /* Adjust border radius as needed */
   font-size: 26px!important; /* Adjust font size as needed */
+}
+
+.btn:hover {
+  background-color: #1b4c77!important;
+}
+
+.card-img-top {
+  max-height: 300px;
+  min-width: 500px;
+  min-height: 400px;
+  flex: auto;
+  object-fit: contain; /* Change object-fit value */
 }
 .imageAboutPage {
   border-radius: 15px;
