@@ -144,7 +144,7 @@ function Portfolio() {
                 <img className="card-img-top" src={egovImage} alt="EGOV - Streamlining Government Services" style={{ objectFit: 'cover', height: '100%' }} />
                 <div className="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center">
                   <a href="https://electronic-government-services-ngubnb4ux-iyasu2s-projects.vercel.app" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
-                    <span className=" btn " style={{ color: 'white', background: 'black' }}>Click here to visit</span>
+                    <span className=" btn .egov-btn " style={{ color: 'white', background: 'black' }}>Click here to visit</span>
                   </a>
                 </div>
 
