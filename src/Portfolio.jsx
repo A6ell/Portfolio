@@ -159,7 +159,7 @@ function Portfolio() {
   <dl className="description-area">
     <div className="tech-item">
       <dt>Frontend:</dt>
-      <dd>HTML, CSS & Javascript</dd>
+      <dd>HTML, CSS, Javascript & Python</dd>
     </div>
     <div className="tech-item">
       <dt>UI:</dt>
