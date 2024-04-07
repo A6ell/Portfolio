@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faGithub,
   faTelegram,
-  faFacebook,
   faInstagram,
   faTwitter,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
+
+
 import profileImage from './assets/profile.jpg';
 import comingSoon from './assets/comingSoon.jpg';
 import egovImage from './assets/egovImage.png';
@@ -230,26 +232,28 @@ function Portfolio() {
       </section>
 
       <footer id="footer">
-        <div className="container-fluid">
-          <div className="social-icons mt-4">
-            <a href="https://t.me/abel_d" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-              <FontAwesomeIcon className='social-icons-color' icon={faTelegram} />
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100075329631293" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-              <FontAwesomeIcon className='social-icons-color' icon={faFacebook} />
-            </a>
-            <a href="https://www.instagram.com/a6el.d/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-              <FontAwesomeIcon className='social-icons-color' icon={faInstagram} />
-            </a>
-            <a href="https://twitter.com/A6elDemere" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-              <FontAwesomeIcon className='social-icons-color' icon={faTwitter} />
-            </a>
-            <a href="https://www.linkedin.com/in/abel-demere-a6282a281/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
-              <FontAwesomeIcon className='social-icons-color' icon={faLinkedin} />
-            </a>
-          </div>
-        </div>
-      </footer>
+  <div className="container-fluid">
+    <div className="social-icons mt-4">
+    <a href="https://github.com/A6ell" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+        <FontAwesomeIcon className='social-icons-color' icon={faGithub} />
+      </a>
+      <a href="https://t.me/abel_d" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+        <FontAwesomeIcon className='social-icons-color' icon={faTelegram} />
+      </a>
+      <a href="https://www.instagram.com/a6el.d/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+        <FontAwesomeIcon className='social-icons-color' icon={faInstagram} />
+      </a>
+      <a href="https://twitter.com/A6elDemere" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+        <FontAwesomeIcon className='social-icons-color' icon={faTwitter} />
+      </a>
+      <a href="https://www.linkedin.com/in/abel-demere-a6282a281/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+        <FontAwesomeIcon className='social-icons-color' icon={faLinkedin} />
+      </a>
+      
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 }
