@@ -1,6 +1,5 @@
 
 .container {
-   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background: linear-gradient(to top, #00000000,  #333340); 
@@ -15,13 +14,20 @@
   }
   
   .button-container {
-  margin-top: 50px;
+  margin-top: 5px;
     margin-bottom: -125px;
   }
   
   .resume-image {
-    margin-top: 0px!important;
+    margin-top: 0px !important;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    max-width: 100%;
+    height: auto;
+}
+.container.data-container div {
+  max-width: 100%;
+  overflow: hidden; /* Prevent image overflow */
+}
+
   

@@ -131,7 +131,11 @@ body, .navbar-nav .nav-link, .card-title, .btn, .social-icons-color, .text-cente
 } */
 
 .card {
-  border: #000000;
+  display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    /* align-items: center; Center horizontally */
+    text-align: center; /* Center text if necessary */
   border-radius: 15px!important;
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -204,11 +208,14 @@ body, .navbar-nav .nav-link, .card-title, .btn, .social-icons-color, .text-cente
 
 .card-img-top {
   max-height: 300px;
-  min-width: 500px;
-  min-height: 400px;
-  flex: auto;
-  object-fit: contain; /* Change object-fit value */
+ 
+  min-height: 350px;
+  width: 100%; /* Ensure image fills the width of its container */
+  object-fit: contain; /* Scale the image to fit within its container while preserving aspect ratio */
+  object-position: center; /* Center the image within its container */
 }
+
+
 .imageAboutPage {
   border-radius: 15px;
 }
