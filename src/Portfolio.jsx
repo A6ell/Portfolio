@@ -246,7 +246,7 @@ function Portfolio() {
       <a href="https://twitter.com/A6elDemere" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
         <FontAwesomeIcon className='social-icons-color' icon={faTwitter} />
       </a>
-      <a href="https://www.linkedin.com/in/abel-demere-a6282a281/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+      <a href="https://www.linkedin.com/in/abel-demere-521776269/" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
         <FontAwesomeIcon className='social-icons-color' icon={faLinkedin} />
       </a>
       
