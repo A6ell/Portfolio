@@ -98,17 +98,17 @@ function Portfolio() {
                   <ul>
                     <li>Name: Abel Demere</li>
                     <li>Age: 26</li>
-                    <li>Occupation: Fullstack Developer</li>
+                    <li>Occupation: Software Engineer</li>
                   </ul>
                 </div>
                 <div className="col-md-6">
-                  <p>I am a Fullstack Developer. With a passion for programming and problem-solving, I have dedicated myself to honing my skills and expertise in web development. I strive to create innovative and efficient solutions that meet the needs of modern businesses and users.</p>
+                  <p>I am a Software Engineer. With a passion for programming and problem-solving, I have dedicated myself to honing my skills and expertise in software development. I strive to create innovative and efficient solutions that meet the needs of modern businesses and users.</p>
                 </div>
               </div>
               <div className="row mt-3">
                 <div className="col-md-12">
                   <p>My dedication to continuous learning and staying up-to-date with the latest industry trends allows me to deliver high-quality code and create seamless user experiences. I am driven by the desire to contribute to the advancement of technology and make a positive impact in the digital world.</p>
-                  <p>Let's connect and explore how we can work together to create exceptional web solutions that elevate user experiences and drive business growth.</p>
+                  <p>Let's connect and explore how we can work together to create exceptional solutions that elevate user experiences and drive business growth.</p>
                 </div>
               </div>
             </div>
