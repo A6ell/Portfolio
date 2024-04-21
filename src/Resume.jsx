@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import CVAbel_DemerePDF from './assets/CVAbel_Demere.pdf';
-import CVAbel_DemereJPG from './assets/CVAbel_Demere.jpg';
+import CVAbel_DemerePDF from '../assets/CVAbel_Demere.pdf';
+import CVAbel_DemereJPG from '../assets/CVAbel_Demere.jpg';
 import './Resume.css'; // Import your CSS file
 
 const Resume = () => {

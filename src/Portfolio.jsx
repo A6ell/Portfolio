@@ -10,11 +10,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 
-import profileImage from './assets/profile.jpg';
-import comingSoon from './assets/comingSoon.jpg';
-import egovImage from './assets/egovImage.png';
-import CVAbel_Demere from './assets/CVAbel_Demere.jpg';
-import CVAbel_DemerePDF from './assets/CVAbel_Demere.pdf';
+import profileImage from '../assets/profile.jpg';
+import comingSoon from '../assets/comingSoon.jpg';
+import egovImage from '../assets/egovImage.png';
+import CVAbel_Demere from '../assets/CVAbel_Demere.jpg';
+import CVAbel_DemerePDF from '../assets/CVAbel_Demere.pdf';
 import './Portfolio.css';
 
 function Portfolio() {
