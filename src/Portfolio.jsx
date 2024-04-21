@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithub,
-  faTelegram,
-  faInstagram,
-  faTwitter,
-  faLinkedin
-} from '@fortawesome/free-brands-svg-icons';
-
+import { faGithub, faTelegram, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import profileImage from '../assets/profile.jpg';
 import comingSoon from '../assets/comingSoon.jpg';
@@ -16,6 +9,7 @@ import egovImage from '../assets/egovImage.png';
 import CVAbel_Demere from '../assets/CVAbel_Demere.jpg';
 import CVAbel_DemerePDF from '../assets/CVAbel_Demere.pdf';
 import './Portfolio.css';
+import SkillsSlideshow from './SkillsSlideshow'; // Import SkillsSlideshow component
 
 function Portfolio() {
   const [expanded, setExpanded] = useState(false);
@@ -115,6 +109,19 @@ function Portfolio() {
           </div>
         </div>
       </section>
+
+      <section id="skills">
+        <div className="container mt-4">
+          <h1 className="text-center">Skills</h1>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <SkillsSlideshow />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       <section id="resume">
         <div className="container mt-4 pt-4">

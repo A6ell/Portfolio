@@ -1,0 +1,52 @@
+.skills-slideshow-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+    overflow: hidden; /* Hide overflow to prevent content from overflowing the container */
+  }
+  
+  .skills-slideshow {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly across the container */
+    align-items: center;
+    width: 100%; /* Full width within the container */
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column; /* Stack icon and skill name vertically */
+    align-items: center; /* Center align content within each skill item */
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .skill.active {
+    opacity: 1;
+  }
+  
+  .skill:hover {
+    opacity: 1;
+  }
+  
+  .skill-name {
+    margin-top: 10px; /* Add spacing between icon and skill name */
+    font-size: 1rem; /* Adjust font size for skill name */
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 600px) {
+    .skills-slideshow {
+       
+      flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+      /* justify-content: space-between;  */
+      display: block;
+    }
+  
+    .skill {
+      flex-basis: 45%; /* Adjust width of each skill item on smaller screens */
+    }
+  }
+  
